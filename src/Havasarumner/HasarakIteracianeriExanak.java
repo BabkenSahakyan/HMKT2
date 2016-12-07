@@ -17,6 +17,10 @@ public class HasarakIteracianeriExanak {
 
     public void iterations(int precision) {
         System.out.println();
+        System.out.println("Հասարակ իտերացիաների եղանակ հավասարումների համար");
+
+        System.out.println(ef.checkSyntax());
+
         System.out.println(ef.getExpressionString() + " = " + ef.calculate() + ", x = " + x.getArgumentValue());
         do {
             x.setArgumentValue(fi.calculate());

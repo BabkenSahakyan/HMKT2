@@ -18,6 +18,10 @@ public class NewtoniExanak {
 
     public void iterations(int precision) {
         System.out.println();
+        System.out.println("Նյուտոնի եղանակ հավասարումների համար");
+
+        System.out.println(ef.checkSyntax());
+
         System.out.println(ef.getExpressionString() + " = " + ef.calculate() + ", x = " + x.getArgumentValue());
         Expression der = new Expression("der(f(x),x)", new PrimitiveElement[]{x});
         der.addDefinitions(new PrimitiveElement[]{f});
