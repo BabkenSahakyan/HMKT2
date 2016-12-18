@@ -11,7 +11,11 @@ public class MainClass {
         hasarakIteracianeriExanak.iterations(3);
 
         NewtoniExanak newtoniExanak = new NewtoniExanak("x^3-2*x^2+1", 0.5);
-        newtoniExanak.iterations(3);
+        newtoniExanak.iterations(3, 1);
+        newtoniExanak.iterations(3, 2);
+        newtoniExanak.iterations(3, 3);
+        newtoniExanak.iterations(3, 4);
+        newtoniExanak.iterations(3, 5);
 
         HavasaruneriHamakarger.HasarakIteracianeriExanak hasarakIteracianeriExanak1 =
                 new HavasaruneriHamakarger.HasarakIteracianeriExanak(
