@@ -57,10 +57,10 @@ public class HasarakIteracianeriExanak {
                 for (int j = 0; j < x.length; j++) {
                     tmp[j] = fi[j].calculate();
                 }
+
                 for (int j = 0; j < x.length; j++) {
                     x[j].setArgumentValue(tmp[j]);
                 }
-                ef[i].calculate();
 
                 for (int j = 0; j < x.length; j++) {
                     System.out.print(ef[j].getExpressionString() +

@@ -24,12 +24,11 @@ public class MainClass {
                         new double[]{-1, -1});
         hasarakIteracianeriExanak1.iterations(3);
 
-//        HavasaruneriHamakarger.HasarakIteracianeriExanak hasarakIteracianeriExanak2 =
-//                new HavasaruneriHamakarger.HasarakIteracianeriExanak(
-//                        new String[]{"x0+2*x1-5*x2^2+6", "8*x0-x1+x2^3-4", "x0^2-x1^3+x2+5"},
-//                        new String[]{"-2*x1+5*x2^2-6", "8*x0+x2^3-4", "-x0^2+x1^3-5"},
-//                        new double[]{0, 0, 0});
-//        hasarakIteracianeriExanak2.iterations(3);
+        HavasaruneriHamakarger.NewtoniExanak NewtoniExanak2 =
+                new HavasaruneriHamakarger.NewtoniExanak(
+                        new String[]{"3*x0-cos(x1)-0.9", "sin(x0-0.6)-x1-1.6"},
+                        new double[]{2, 1});
+        NewtoniExanak2.iterations(3);
 
 
     }
