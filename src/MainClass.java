@@ -1,5 +1,6 @@
 import Havasarumner.HasarakIteracianeriExanak;
 import Havasarumner.NewtoniExanak;
+import HavasaruneriHamakarger.DiferencialHavasarumneriMetod;
 
 public class MainClass {
     public static void main(String[] args) {
@@ -30,6 +31,14 @@ public class MainClass {
                         new double[]{2, 1});
         NewtoniExanak2.iterations(3);
 
-
+        DiferencialHavasarumneriMetod diferencialHavasarumneriMetod =
+                new DiferencialHavasarumneriMetod(
+                        new String[]{"3*x0-cos(x1)-0.9", "sin(x0-0.6)-x1-1.6"},
+                        new double[]{2, 1},
+                        new double[]{0.015, 1},
+                        0.7,
+                        1
+                );
+        diferencialHavasarumneriMetod.iterations(3);
     }
 }
